@@ -9,35 +9,38 @@ class GradesTest {
 	@Test
 	void testGradesMax() {
 		Grades grade = new Grades();
-		
-			assertEquals(69, grade.gradesMax(new int [] {42, 69, 24}));
-			assertEquals(-24, grade.gradesMax(new int [] {-42, -69, -24}));
-			assertEquals(0, grade.gradesMax(new int [] {}));
+
+		assertEquals(69, grade.gradesMax(new int[] { 42, 69, 24 }));
+		assertEquals(-24, grade.gradesMax(new int[] { -42, -69, -24 }));
+		assertEquals(0, grade.gradesMax(new int[] {}));
 	}
 
 	@Test
 	void testGradesTotal() {
 		Grades grade = new Grades();
-		
-		assertEquals(6, grade.gradesTotal(new int [] {1, 2, 3}));
-		assertEquals(-6, grade.gradesTotal(new int [] {-1, -2, -3}));
-		assertEquals(0, grade.gradesTotal(new int [] {}));
-		
+
+		assertEquals(6, grade.gradesTotal(new int[] { 1, 2, 3 }));
+		assertEquals(-6, grade.gradesTotal(new int[] { -1, -2, -3 }));
+		assertEquals(0, grade.gradesTotal(new int[] {}));
+
 	}
 
 	@Test
 	void testGradesAverage() {
 		Grades grade = new Grades();
-		
-		assertEquals(2, grade.gradesAverage(new int [] {1, 2, 3}));
-		assertEquals(-2, grade.gradesAverage(new int [] {-1, -2, -3}));
-		assertEquals(0, grade.gradesAverage(new int [] {}));
+
+		assertEquals(2, grade.gradesAverage(new int[] { 1, 2, 3 }));
+		assertEquals(-2, grade.gradesAverage(new int[] { -1, -2, -3 }));
+		assertEquals(0, grade.gradesAverage(new int[] {}));
 	}
 
 	@Test
 	void testCountFails() {
 		Grades grade = new Grades();
-		
+
+		assertEquals(2, grade.gradesAverage(new int[] { 1, 2, 3 }));
+		assertEquals(-2, grade.gradesAverage(new int[] { -1, -2, -3 }));
+		assertEquals(0, grade.gradesAverage(new int[] {}));
 	}
 
 }
