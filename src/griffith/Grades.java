@@ -1,5 +1,5 @@
 package griffith;
-
+//Antonio Madrid - 3122205
 public class Grades {
 
 	int gradesMax(int[] grades) {
