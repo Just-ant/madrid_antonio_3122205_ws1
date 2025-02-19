@@ -19,6 +19,10 @@ class GradesTest {
 	void testGradesTotal() {
 		Grades grade = new Grades();
 		
+		assertEquals(6, grade.gradesTotal(new int [] {1, 2, 3}));
+		assertEquals(-6, grade.gradesTotal(new int [] {-1, -2, -3}));
+		assertEquals(0, grade.gradesTotal(new int [] {}));
+		
 	}
 
 	@Test
