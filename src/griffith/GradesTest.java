@@ -29,6 +29,9 @@ class GradesTest {
 	void testGradesAverage() {
 		Grades grade = new Grades();
 		
+		assertEquals(2, grade.gradesAverage(new int [] {1, 2, 3}));
+		assertEquals(-2, grade.gradesAverage(new int [] {-1, -2, -3}));
+		assertEquals(0, grade.gradesAverage(new int [] {}));
 	}
 
 	@Test
