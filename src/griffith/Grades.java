@@ -18,7 +18,7 @@ public class Grades {
 		}
 		return max;
 
-	}
+	} //gets max grade
 
 	int gradesTotal(int[] grades) {
 
@@ -53,11 +53,18 @@ public class Grades {
 
 		double average = total / grades.length;
 		return average;
-	}
+	} //gets average of array
 
 	int countFails(int[] grades, int minGrade) {
-		return 0;
+	    int count = 0;
 
-	} // count how many grades < minGrade
+	    for (int g : grades) {
+	        if (g < minGrade) {
+	            count++;
+	        }
+	    }
+
+	    return count;
+	} //count how many grades < minGrade
 
 }

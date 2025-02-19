@@ -38,9 +38,9 @@ class GradesTest {
 	void testCountFails() {
 		Grades grade = new Grades();
 
-		assertEquals(2, grade.gradesAverage(new int[] { 1, 2, 3 }));
-		assertEquals(-2, grade.gradesAverage(new int[] { -1, -2, -3 }));
-		assertEquals(0, grade.gradesAverage(new int[] {}));
+		assertEquals(1, grade.countFails (new int[] { 100, 69, 40, 32 },40));
+		assertEquals(4, grade.countFails (new int[] { 34, 23, 34,12 },40));
+		assertEquals(0, grade.countFails(new int[] {},40));
 	}
 
 }
