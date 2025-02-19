@@ -8,22 +8,29 @@ class GradesTest {
 
 	@Test
 	void testGradesMax() {
-		fail("Not yet implemented");
+		Grades grade = new Grades();
+		
+			assertEquals(69, grade.gradesMax(new int [] {42, 69, 24}));
+			assertEquals(-24, grade.gradesMax(new int [] {-42, -69, -24}));
+			assertEquals(0, grade.gradesMax(new int [] {}));
 	}
 
 	@Test
 	void testGradesTotal() {
-		fail("Not yet implemented");
+		Grades grade = new Grades();
+		
 	}
 
 	@Test
 	void testGradesAverage() {
-		fail("Not yet implemented");
+		Grades grade = new Grades();
+		
 	}
 
 	@Test
 	void testCountFails() {
-		fail("Not yet implemented");
+		Grades grade = new Grades();
+		
 	}
 
 }
